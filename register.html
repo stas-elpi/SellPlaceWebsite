@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="el" class="no-js">
+    <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Golden Road </title>
+        <link href="images/yellowhouse1.png" rel="shortcut icon" type="image/png" />
+        <!-- <script src="validation.js"></script> -->
+    
+        <style>
+            #btn_submit,
+           #btn_reset {
+               width: 100%; /* Set the width of the buttons to 100% */
+               padding: 10px; /* Add some padding for better visual appearance */
+               box-sizing: border-box; /* Include padding and border in the total width/height */
+           }
+        </style>    
+    </head>
+    <body>
+        <header>
+            <div class="content">
+                <h3 class = "bottom_right_text">&nbsp;&nbsp;Golden Road Productions</h3>
+                <img src="images/map.png" style="float:auto;"><a href="https://goo.gl/maps/NevCcBAv6Hx1VS8F6" target=blank>Πατησίων 76</a>&nbsp;
+                <img src="images/clock.png" style="float:auto;">09:00-18:00 &nbsp;
+                <img src="images/phone.png" style="float:auto;">2101234567 &nbsp;
+                <img src="images/fb.png" style="float:auto;"><a href=https://www.facebook.com/groups/aueb.informatics target=blank>Facebook</a>
+            </div>
+
+
+
+            <h1>Registration Form</h1>
+
+            <!-- ? -->
+            <div id="error-status"></div>
+            <form name="gbForm" method="post" action="/register-user">
+
+
+
+                <fieldset>
+                    <legend>Προσωπικά Στοιχεία Χρήστη</legend>
+                    <p>
+                        <label class="question" for="the_name">
+                            Ονοματεπώνυμο: </label>
+                        <input type="text" id="the_name" name="the_name" placeholder="Enter your full name." size="50" required
+                            autofocus>
+                    </p>
+                    <p>
+                    
+                        <label class= "question" for="day">Ημερομηνία Γέννησης: </label> d
+                        <input type="number" id="day" name="day" min="1" max="31" step="1" required>
+
+                        <label for="month">m:</label>
+                        <input type="number" id="month" name="month" min="1" max="12" step="1" required>
+
+                        <label for="year">y:</label>
+                        <input type="number" id="year" name="year" min="1900" max="2019" step="1" required>
+
+                    </p>
+                    <p>
+                        <label class="question" for="the_email">
+                            Ηλεκτρονικό Ταχυδρομείο Χρήστη: </label>
+                        <input type="email" id="the_email" name="the_email" placeholder="user email" size="50"
+                            autocomplete="email" list="emailSuggestions" required>
+
+                            <datalist id="emailSuggestions">
+                               <option value="yourname@gmail.com">
+                               <option value="lastname123@gmail.com">
+                               <option value="goldenroad@gmail.com">
+                           </datalist>
+                    </p>
+                    <p>
+                        <label class="question" for="the_address">
+                            Διεύθυνση Κατοικίας: </label>
+                        <input type="text" id="the_address" name="the_address" placeholder="user address" size="50"
+                        autocomplete="address" list="addressSuggestion" required>
+
+
+                        <datalist id="addressSuggestion">
+                            <option value="Πατησιων 76">
+                            <option value="Ακαδημίας 12">
+                            <option value="Τροιας 25">
+                        </datalist>
+                    </p>
+
+                    <p>
+                        <label class="question" for="the_phonenumber">
+                            Τηλέφωνο Επικοινωνίας: </label>
+                        <input type="number" id="the_phonenumber" name="the_phonenumber" placeholder="+30..." size="50"
+                            required>
+                    </p>
+                </fieldset>
+            </br>
+                <fieldset>
+                    <legend>Ταυτοποίηση Χρήστη</legend>
+
+                    <p>
+                        <label class="question" for="username">
+                            'Ονομα: </label>
+                        <input type="username" id="username" name="the_address" placeholder="Set User Name" size="50"
+                            required>
+                    </p>
+                    <p>
+                        <label class="question" for="password">
+                            Κωδικός: </label>
+                        <input type="password" id="password" name="password" placeholder="Set a password that you'll remember" size="50"
+                            required>
+                    </p>
+                    <p>
+                        <label class="question" for="password">
+                            Επαλήθευση Κωδικού: </label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="verify your password" size="50"
+                            required>
+                    </p>
+
+
+                </fieldset>
+            </br>
+
+            <fieldset>
+                <legend>Επικοινωνία</legend>
+
+                
+
+                <p>
+                    <span class="question">Πως θα θελατε να ενημερωνεστε για νέες αγγελίες, πεοσφορές σε προιόντα κτλ;:</span><br>
+
+                    <input type="radio" id="email" name="contact" value="">
+                    <label for="email">email</label><br>
+                    <input type="radio" id="sms" name="contact"
+                        value="">
+                    <label for="sms">SMS</label><br>
+
+                    <input type="radio" id="viber" name="contact"
+                        value="">
+                    <label for="viber">Viber.</label><br>
+                    
+                    <input type="radio" id="whatsapp" name="contact" value="">
+                    <label for="whatsapp">WhatsApp.</label>
+                </p>
+
+                
+            </fieldset>
+                <fieldset>
+                    <legend> Σύντομο Ερωτηματολόγιο</legend>
+                </br>
+                    Βοηθήστε μας να διευκολήνουμε την αναζήτηση σας συμπληρώνοντας τα κενά σύμφωνα με τις προτιμήσεις σας.
+            
+                    <p>
+                        <span class="question">1. Τι είδους αγγελίες σας ενδιαφέρουν συνήθως;</span><br>
+    
+                        <input type="checkbox" id="house" name="adverts" value="">
+                        <label for="house">Κατοικιών.</label><br>
+
+                        <input type="checkbox" id="job" name="adverts"
+                            value="">
+                        <label for="job">Ανοιχτές θέσεις Πρόσληψης</label><br>
+
+                        <input type="checkbox" id="electronics" name="adverts"
+                            value="">
+                        <label for="electronics">Ηλεκτρονικά/ Ηλεκτρικά προιόντα και είδη σπιτιού.</label><br>
+                        <input type="checkbox" id="no_taste" name="adverts" value="">
+                        <label for="no_taste">Δεν έχω κάποια προτίμηση</label>
+                    </p
+
+    
+                    <p>
+                        <span class="question">2. Ποιο είναι το επαγγελματικό σας προφίλ;</span><br>
+    
+                        <input type="radio" id="student" name="career" value="">
+                        <label for="student">Είμαι μαθητής.</label><br>
+
+                        <input type="radio" id="working" name="career"
+                            value="">
+                        <label for="employed"> Είμαι εργαζόμενος</label><br>
+
+                        <input type="radio" id="unemployed" name="career"
+                            value="">
+                        <label for="unemployed">Είμαι άνεργος</label><br>
+                        <input type="radio" id="retired" name="career" value="">
+                        <label for="retired">Είμαι συνταξιούχος</label>
+                    </p>
+                    
+
+                    <p>
+                        <span class="question">3. Που θα επιθημούσατε να κατοικήσετε ή να εργαστείτε;</span><br>
+    
+                        <input type="radio" id="nocomment" name="wish" value="">
+                        <label for="nocomment">Δεν έχω προτίμηση / Δεν με ενδιαφέρει</label><br>
+
+                        <input type="radio" id="city" name="wish"
+                            value="">
+                        <label for="city"> Σε μεγάλο αστικό κέντρο όπως Αθήνα, Θεσσαλονίκη</label><br>
+
+                        <input type="radio" id="countryside" name="wish"
+                            value="">
+                        <label for="countryside">Σε επαρχιακή πόλη</label><br>
+
+                    </p>
+
+                    <p>
+                        <span class="question">4. Τι όχημα αναζητείτε;</span><br>
+    
+                        <input type="checkbox" id="nocar" name="car" value="">
+                        <label for="nocar">Δεν αναζητώ όχημα</label><br>
+
+                        <input type="checkbox" id="newcar" name="car"
+                            value="">
+                        <label for="newcar"> Αυτοκίνητο, Νέο ή Μεταχειρισμένο</label><br>
+
+                        <input type="checkbox" id="bike" name="car"
+                            value="">
+                        <label for="bike">Μηχανή, Νέα ή Μεταχειρισμένη</label><br>
+
+                        <input type="checkbox" id="different" name="car"
+                            value="">
+                        <label for="different">άλλο</label><br>
+
+                    </p>
+
+                    <p>
+                        <span class="question">5. Τι στυλ επίπλων σας αρέσει;</span><br>
+    
+                        <input type="checkbox" id="nocmomment" name="furniture" value="">
+                        <label for="nocmomment">Δεν έχω κάποια προτίμηση</label><br>
+
+                        <input type="checkbox" id="simple" name="furniture"
+                            value="">
+                        <label for="simple"> Απλό, σύγχρονο</label><br>
+
+                        <input type="checkbox" id="old" name="furniture"
+                            value="">
+                        <label for="old">Παραδοσιακό, Λεπτομερές</label><br>
+
+                        <input type="checkbox" id="antique" name="furniture"
+                            value="">
+                        <label for="antique">Αντίκες</label><br>
+
+                        
+                        <input type="checkbox" id="different" name="furniture"
+                            value="">
+                        <label for="different">άλλο</label><br>
+
+                    </p>
+  
+                    <p>
+                        <span class="question">6.Ως τι αυτοπροσδιορίζεστε;</span><br>
+    
+                        <input type="radio" id="woman" name="statements" value="">
+                        <label for="woman">Γυναίκα</label><br>
+
+                        <input type="radio" id="man" name="statements"
+                            value="">
+                        <label for="man"> Άντρας</label><br>
+
+                        <input type="radio" id="nonbinary" name="statements"
+                            value="">
+                        <label for="Nonbinary">Τίποτα απο τα δύο</label><br>
+
+                        <input type="radio" id="nocomment" name="statements"
+                            value="">
+                        <label for="nocomment">Προτιμώ να μην πω</label><br>
+
+                    </p>
+
+
+                </fieldset>
+                <br/>
+                <div id="buttons">
+                    <input type="submit" id="btn_submit" value="Click Here to Submit"> or
+                    <input type="reset" id="btn_reset" value="Erase and Start Over"> 
+                </div>
+        
+            </form>
+            
+        </header>
+        <script src="validation.js" defer></script>
+    </body>
+
+</html>

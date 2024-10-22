@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="el" class="no-js">
+  <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Golden Road-Categories </title>
+    <link href="images/yellowhouse1.png" rel="shortcut icon" type="image/png" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+  </head>
+  <body>
+    <header>
+      <div class="content">
+          <h3 class = "bottom_right_text">&nbsp;&nbsp;Golden Road Productions</h3>
+          <img src="images/map.png" style="float:auto;"><a href="https://goo.gl/maps/NevCcBAv6Hx1VS8F6" target=blank>Πατησίων 76</a>&nbsp;
+          <img src="images/clock.png" style="float:auto;">09:00-18:00 &nbsp;
+          <img src="images/phone.png" style="float:auto;">2101234567 &nbsp;
+          <img src="images/fb.png" style="float:auto;"><a href=https://www.facebook.com/groups/aueb.informatics target=blank>Facebook</a>
+      </div>
+      <div class="menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="Aboutus.html" >AboutUs</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+
+          </ul>
+      </div>
+  </header>
+
+  <main>
+
+    <h1>Contact us</h1>
+    <p> Φόρμα επικοινωνίας για τεχνική υποστήριξη. </p>
+    <p>Συμπληρώστε τα στοιχεία σας στην παρακάτω φόρμα έτσι ώστε να
+        λάβετε πληροφορίες σχετικά με την κατάσταση του πακέτου σας, πρόβλημα στην κράτηση, την επικοινωνία ή την αγορά σας.
+        Η τεχνική υποστήριξη σας υπόσχεται απάντηση μέσα στο επόμενο 24ωρο.
+    </p>
+
+    <form name="gbForm" method="post" action="/register-user">
+
+        <!-- Στη θέση του output θα μπορούσαν να εμφανιστούν σφάλματα επικύρωσης της φόρμας
+            με χρήση javascript (θα το δούμε αργότερα)-->
+        <output id="errors"></output>
+        <fieldset>
+            <legend><h3>Personal Information</h3></legend>
+            <p>
+                <label class="question" for="the_name">
+                    Your full name :</label>
+                <input type="text" id="the_name" name="the_name" placeholder="Enter your full name." size="50" required
+                    autofocus>
+            </p>
+			      <p>
+                <label class="question" for="the_email">
+                    Your email
+                    address :</label>
+                <input type="email" id="the_email" name="the_email" placeholder="Enter your email address." size="50" required>
+            </p>
+            <p>
+                <label class="question" for="phone_number">
+                    telephone +30 </label>
+                <input type="tel" id="phone_number" name="phone_number" placeholder="69" size="50"
+                required>
+            </p>
+            <p> Επιπλέον, συμπληρώστε τον κωδικό της αγγελίας,  </p>
+            <p>
+                <label class="question" for="code">
+                    Code :</label>
+                <input type="code" id="code" name="code" placeholder="Enter the code of the ad" size="50"
+                required>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend><h3>Problem Description:</h3></legend>
+            <p>
+                <textarea id="message" name="message" rows="7" cols="55"> </textarea>
+            </p>
+        </fieldset>
+
+        <div id="buttons">
+            <input type="submit" id="btn_submit" value="Click Here to Submit"> or
+            <input type="reset" id="btn_reset" value="Erase and Start Over"> 
+        </div>
+
+    </main>
+  </body>
+
+  <footer>
+        <div style="margin-top:2%;">
+
+        <h3>Golden Road Productions</h3>
+        <p>Δημήτρης Τζοβανης, Ελπίδα Στασινού</p>
+        <a href="mailto:goldenroad@gmail.com">goldenroad@gmail.com</a>
+        ©Copyright 2023
+  </footer>
+
+</html>
